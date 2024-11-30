@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Login and Sign Up</title>
+   <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container " id="login-form">
+        <div class="row d-flex justify-content-center ">
+            <div class="col-md-6 ">
+                <div class="card">
+                    <div class="card-body">
+                        <h1 class="card-title text-center">Smart Login System</h1>
+                        <div class="alert alert-danger" id="login-error" style="display: none;"></div>
+                        <div class="alert alert-success" id="login-success" style="display: none;"></div>
+                        <form>
+                            <div class="form-group mb-3">
+                                
+                                <input type="email" class="form-control bg-transparent text-white" id="login-email" placeholder="Enter your email">
+                            </div>
+                            <div class="form-group">
+                               
+                                <input type="password" class="form-control bg-transparent text-white" id="login-password" placeholder="Enter your password">
+                            </div>
+                            <button type="button" class="btn w-100 btn-block" id="login-button">Login</button>
+                        </form>
+                        <div class="text-center mt-3 text-white">
+                            Don't have an account? <a href="#" id="show-signup-link">Sign Up</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="signup-form" style="display: none;">
+        <div class="row d-flex justify-content-center">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title text-center">Sign Up</h3>
+                        <div class="alert alert-danger" id="signup-error" style="display: none;"></div>
+                        <div class="alert alert-success" id="signup-success" style="display: none;"></div>
+                        <form>
+                            <div class="form-group">
+                                <input type="text" class="form-control bg-transparent text-white" id="signup-username" placeholder="Enter your name">
+                            </div>
+                            <div class="form-group mt-3 mb-3"> 
+                                <input type="email" class="form-control bg-transparent text-white" id="signup-email" placeholder="Enter your email">
+                            </div>
+                            <div class="form-group">
+                              
+                                <input type="password" class="form-control bg-transparent text-white" id="signup-password" placeholder="Enter your password">
+                            </div>
+                            <button type="button" class="btn w-100 btn-block" id="signup-button">Sign Up</button>
+                        </form>
+                        <div class="text-center mt-3 text-white">
+                            Already have an account? <a href="#" id="show-login-link">Login</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
